@@ -5,9 +5,27 @@ length where ans[i] = nums[nums[i]] for each 0 <= i < nums.length and return it.
 A zero-based permutation nums is an array of distinct integers from 0 to nums.length - 1 (inclusive).
 */
 
-nums = [0,2,1,5,3,4]
+
 const buildArray = function(nums) {
-    return nums.sort()
+    let ans = [];
+    for (i = 0; i < nums.length; i++){
+        ans.push(nums[nums[i]]);
+    }
+    return ans;
 };
 
 console.log(buildArray([0,2,1,5,3,4]))
+
+
+/*
+var buildArray = function(nums) {
+    return nums.map(val => nums[val])
+};
+
+*/
+
+/*
+What did I learn:
+    - .map
+    - forEach and .map is different. forEach doesn't return anything. It only lets use to go over the array and do somehting on the elements
+*/
