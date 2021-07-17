@@ -10,3 +10,10 @@ const getConcatenation = function(nums){
     return ans
 }
 console.log(getConcatenation([1,2,1]))
+
+/* 
+What did I learn:
+ - using .concat()
+ 
+ Question: where we can use this method in real codes?
+ */
