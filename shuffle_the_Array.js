@@ -6,17 +6,17 @@ Return the array in the form [x1,y1,x2,y2,...,xn,yn].*/
    nums.map() 
 };*/
 
-let shuffle = function(nums, n) {
-    let arr2=[];
-    let final=[];
-     for(let i=n;i<nums.length;i++){
-          arr2.push(nums[i]);
-     }
-     for(let i=0;i<n;i++){
-         final.push(nums[i]);
-         final.push(arr2[i]);
-     }
-     return final;
- };
+const shuffle = function(nums, n) {
+    let nums2 = [];
+    let shuffled = [];
+    for (i=n; i<nums.length; i++){
+        nums2.push(nums[i]); 
+    }
+    for (i=0; i<nums2.length; i++){
+        shuffled.push(nums[i])
+        shuffled.push(nums2[i])
+    }
+    return shuffled
+};
 
- console.log(shuffle([1,2,3,4,5,6], 3))
+console.log(shuffle([1,2,3,4,5,6], 3))
