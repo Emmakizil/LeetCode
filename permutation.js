@@ -9,7 +9,7 @@ A zero-based permutation nums is an array of distinct integers from 0 to nums.le
 const buildArray = function(nums) {
     let ans = [];
     for (i = 0; i < nums.length; i++){
-        ans.push(nums[nums[i]]);
+        ans.push(nums[nums[i]]); //
     }
     return ans;
 };
@@ -28,4 +28,8 @@ var buildArray = function(nums) {
 What did I learn:
     - .map
     - forEach and .map is different. forEach doesn't return anything. It only lets use to go over the array and do somehting on the elements
-*/
+    - sometime we need to have the original array unchanged
+
+Quetion: What does permutation mean (zero based permutation), is it difference with math permutation?
+Is there example/hint in interviews
+    */
