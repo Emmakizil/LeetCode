@@ -7,22 +7,35 @@ ruleKey == "color" and ruleValue == colori.
 ruleKey == "name" and ruleValue == namei.
 Return the number of items that match the given rule.*/
 
+// var countMatches = function(items, ruleKey, ruleValue) {
+//     let total = 0;
+    
+//     for (let i = 0; i < items.length; i++) {
+//         if (ruleKey === "type" && items[i][0] === ruleValue) {
+//             total += 1;
+//         }
+//         if (ruleKey === "color" && items[i][1] === ruleValue) {
+//             total += 1;
+//         }
+//         if (ruleKey === "name" && items[i][2] === ruleValue) {
+//             total += 1;
+//         }
+//     }
+//     return total;          
+// };
 const countMatches = function(items, ruleKey, ruleValue) {
     let counter = 0;
-    for (i=0; i<items.length; i++){
-        if(ruleKey == "color"){
-            if (items[i][1]==ruleValue){
-                counter++
-            } else if(ruleKey== "type"){
-                if(items[i][0]==ruleValue){
-                    counter++
-                } else{
-                    counter++
-                }
-            }
+    for(let i = 0; i < items.length; ++i) {
+        if(ruleKey === 'type') {
+            if(ruleValue === items[i][0]) counter++;
         }
-    }
-    return counter
+        else if(ruleKey === 'color') {
+            if(ruleValue === items[i][1]) counter++;
+        }
+        else if(ruleKey === 'name') {
+            if(ruleValue === items[i][2]) counter++;
+        }
+    } return counter;
 };
 
-console.log(countMatches([["phone","blue","pixel"],["computer","silver","lenovo"],["phone","gold","iphone"]], "color", "silver"))
+console.log(countMatches([["phone","blue","pixel"],["computer","silver","phone"],["phone","gold","iphone"]],"type", "phone"))
