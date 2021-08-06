@@ -16,3 +16,7 @@ const createTargetArray = function(nums, index) {
 };
 
 console.log(createTargetArray([0,1,2,3,4], [0,1,2,2,1]))
+
+/* What did I learn:
+ -using splice(start, deleteCount, item1) method
+ */
