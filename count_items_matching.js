@@ -39,3 +39,7 @@ const countMatches = function(items, ruleKey, ruleValue) {
 };
 
 console.log(countMatches([["phone","blue","pixel"],["computer","silver","phone"],["phone","gold","iphone"]],"type", "phone"))
+
+/* What did I learn:
+ -
+ */
