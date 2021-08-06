@@ -12,3 +12,7 @@ const kidsWithCandies = function(candies, extraCandies) {
 };
 
 console.log(kidsWithCandies([1,3,4,5], 3))
+
+/* What did I learn:
+ -what is spread/rest operator
+ */
