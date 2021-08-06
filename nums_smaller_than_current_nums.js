@@ -22,8 +22,8 @@ Return the answer in an array.*/
 
 
 
-const smallerNumbersThanCurrent = function(nums) {
-    return nums.map((numa) => nums.reduce((total, numb)=> numa>numb ? total+1 : total, 0))
+var smallerNumbersThanCurrent = function(nums) {
+    return nums.map((numa, i) => nums.reduce((total, numb,ii)=> numa>numb ? total+1 : total, 0))
 };
 
 console.log(smallerNumbersThanCurrent([8,1,2,2,3]))
@@ -34,8 +34,6 @@ console.log(smallerNumbersThanCurrent([8,1,2,2,3]))
 //     return nums.map(v => sorted.indexOf(v));
 // };
 
-
-console.log(smallerNumbersThanCurrent([8,1,2,2,3]))
 
 /* What did I learn:
 - .map and .reduce
