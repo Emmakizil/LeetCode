@@ -10,5 +10,5 @@ const findNumbers = function(nums) {
 console.log(findNumbers([112,12,345,1111]))
 
 /* What did I learn:
-    - how to get length of each item: convert it to a string
+    - how to find length of each item: convert it to a string
 */
